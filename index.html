@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Upcoming Gigs</title>
+    <title>Florian Wiethof - Comedy</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <style>
+        body {
+            position: relative;
+            background-image: url("image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(100,100,100, 0.8);
+            opacity: 0.9;
+            z-index: 1;
+        }
+        
+        .table tr {
+            background-color: transparent;
+            /* Remove any other styles applied to table rows */
+        }
+        p {
+            text-align: justify;
+        }
+
+        .container {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+  
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="text-center">Upcoming Gigs</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Placeholder Gig 1</td>
-            <td>June 1, 2023</td>
-            <td>New York City, NY</td>
-          </tr>
-          <tr>
-            <td>Placeholder Gig 2</td>
-            <td>June 15, 2023</td>
-            <td>Los Angeles, CA</td>
-          </tr>
-          <tr>
-            <td>Placeholder Gig 3</td>
-            <td>June 30, 2023</td>
-            <td>Chicago, IL</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="overlay">
+      <div class="container">
+
+        <h1 class="text-center">Hey, I'm Flo.</h1>
+        <p>Welcome to my website! I am thrilled to introduce myself as a versatile artist based in the vibrant city of Munich. With a passion for comedy and a flair for poetic expression, I proudly wear the hats of a Standup-Comedian and Poetry Slammer. Through laughter and the power of words, I aim to entertain, engage, and connect with my audiences on a profound level. Whether it's delivering hilarious punchlines on stage or crafting captivating verses, I strive to create memorable experiences that leave a lasting impression. Join me on this exciting journey as we explore the colorful world of comedy and poetry together in the beautiful backdrop of Munich.</p>
+        <h3>Upcoming Gigs</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stand-up Comedy</td>
+              <td>May 18, 2023</td>
+              <td>20:00-22:00</td>
+              <td>Lost Weekend, Munich</td>
+            </tr>
+            <tr>
+              <td>Poetry Slam</td>
+              <td>May 20, 2023</td>
+              <td>19:00-22:00</td>
+              <td>Stragula, Munich</td>
+            </tr>
+            <tr>
+              <td>Music Comedy - Singing & Piano</td>
+              <td>May 22, 2023</td>
+              <td>19:00-21:00</td>
+              <td>Lost Weekend, Munich</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Contact</h3>
+        <p>For gig requests, feedback, or anything else, feel free to <a href="mailto: wiethof@icloud.com">reach out by mail</a>.</p>
+      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
